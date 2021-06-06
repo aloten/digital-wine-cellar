@@ -1,0 +1,25 @@
+{
+  "bottles": [
+    {
+      "id": 1,
+      "product": "2019 Yellow Tail Shiraz",
+      "vintage": 2019,
+      "producer": "Yellow Tail",
+      "countryCode": "AUS"
+    },
+    {
+      "id": 2,
+      "product": "2013 F E Trimbach Pinot Blanc",
+      "vintage": 2013,
+      "producer": "Maison Trimbach",
+      "countryCode": "FRA"
+    },
+    {
+      "product": "2015 Francois Pinon Vouvray",
+      "vintage": "2015",
+      "producer": "Francois Pinon",
+      "countryCode": "FRA",
+      "id": 3
+    }
+  ]
+}

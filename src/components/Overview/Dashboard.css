@@ -1,0 +1,25 @@
+.dashboard-container {
+  width: 60%;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.dashboard-bucket {
+  margin: 20px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.dashboard-bucket span {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#gain span {
+  color: green;
+}

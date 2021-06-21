@@ -2,11 +2,11 @@ import { useState, useEffect } from 'react'
 import Inventory from './Inventory'
 import Bottles from '../Bottles/Bottles'
 import AddBottle from '../Bottles/AddBottle'
-import Table from './Table/Table'
+// import Table from './Table/Table'
 import './Cellar.css'
-// import BasicTable from './Table/BasicTable'
+import BasicTable from './Table/BasicTable'
 // import CustomizedTable from './Table/CustomizedTable'
-// import BasicFilteringGrid from './Table/BasicFilteringGrid'
+import BasicFilteringGrid from './Table/BasicFilteringGrid'
 
 const Cellar = () => {
   const [showAddBottle, setShowAddBottle] = useState(false)
@@ -55,18 +55,15 @@ const deleteBottle = async (id) => {
 
     return (
       <div className='cellar'>
-        <div className='grid'>
-          <Table />
-        </div>
+          <div className='grid'>
+            <BasicFilteringGrid />
+          </div>
         <div className='add-bottle-btn'>
           <Inventory onAdd={() => setShowAddBottle(!showAddBottle)}
             showAdd={showAddBottle}
           />
           {showAddBottle && <AddBottle onAdd={addBottle}/>}
         </div>
-        {/* <div className="inventory-container">
-          <Bottles bottles={bottles} onDelete={deleteBottle}/>
-        </div> */}
       </div>
     )
 }

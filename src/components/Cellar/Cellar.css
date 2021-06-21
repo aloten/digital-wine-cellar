@@ -4,14 +4,19 @@
   display: flex;
 }
 
-.grid {
+.grid-container {
   width: 60%;
-  background-color: white;
   margin-top: 20px;
   margin-left: 10%;
+  border: 1px solid black;
+}
+
+.grid {
+  background-color: white;
 }
 
 .add-bottle-btn {
   margin-top: 20px;
   margin-left: 10px;
+  border: 1px solid black;
 }

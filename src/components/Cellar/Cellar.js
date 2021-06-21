@@ -55,9 +55,11 @@ const deleteBottle = async (id) => {
 
     return (
       <div className='cellar'>
+        <div className='grid-container'>
           <div className='grid'>
             <BasicFilteringGrid />
           </div>
+        </div>  
         <div className='add-bottle-btn'>
           <Inventory onAdd={() => setShowAddBottle(!showAddBottle)}
             showAdd={showAddBottle}
